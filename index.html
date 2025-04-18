@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עולם המערכות - חקר מערכות ורכיביהן</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- מסך פתיחה -->
+    <div id="welcome-screen" class="screen active">
+        <div class="container">
+            <h1 class="main-title">עולם המערכות</h1>
+            <h2 class="subtitle">חקר מערכות ורכיביהן</h2>
+            <div class="animation-container">
+                <div class="system-demo">
+                    <div class="system-circle large-circle">
+                        <div class="system-circle medium-circle">
+                            <div class="system-circle small-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <button id="start-btn" class="main-button">התחל</button>
+                <button id="instructions-btn" class="main-button">הוראות</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- מסך הוראות -->
+    <div id="instructions-screen" class="screen">
+        <div class="container">
+            <h2>הוראות</h2>
+            <div class="instructions-content">
+                <p>ברוכים הבאים לאפליקציית "עולם המערכות"!</p>
+                <p>מטרת האפליקציה היא ללמוד על מערכות, רכיביהן וכיצד הם פועלים יחד.</p>
+                <p>באפליקציה תוכלו:</p>
+                <ul>
+                    <li>לחקור מערכות מחיי היומיום</li>
+                    <li>לזהות רכיבים במערכת ואת הקשרים ביניהם</li>
+                    <li>להבין איך שינויים ברמת המיקרו משפיעים על המערכת כולה</li>
+                    <li>לתרגל את הידע שלכם בזיהוי מערכות שונות</li>
+                </ul>
+                <p>בחרו ברמת הקושי המתאימה לכם והתחילו לחקור!</p>
+            </div>
+            <button id="back-to-welcome" class="secondary-button">חזרה</button>
+        </div>
+    </div>
+
+    <!-- מסך בחירת רמת קושי -->
+    <div id="difficulty-screen" class="screen">
+        <div class="container">
+            <h2>בחרו רמת קושי</h2>
+            <div class="difficulty-options">
+                <div id="easy-level" class="difficulty-option">
+                    <div class="difficulty-icon easy">1</div>
+                    <h3>רמה קלה</h3>
+                    <p>זיהוי פשוט של מערכות ורכיביהן</p>
+                </div>
+                <div id="medium-level" class="difficulty-option">
+                    <div class="difficulty-icon medium">2</div>
+                    <h3>רמה בינונית</h3>
+                    <p>ניתוח מעמיק יותר של מערכות מורכבות</p>
+                </div>
+            </div>
+            <button id="back-from-difficulty" class="secondary-button">חזרה</button>
+        </div>
+    </div>
+
+    <!-- מסך משחק - רמה קלה -->
+    <div id="game-easy-screen" class="screen">
+        <div class="container">
+            <div class="game-header">
+                <h2>רמה קלה: זיהוי מערכות</h2>
+                <div class="progress-bar">
+                    <div id="progress-easy" class="progress"></div>
+                </div>
+            </div>
+            
+            <div id="systems-container" class="systems-container">
+                <!-- התוכן יוכנס דינמית דרך JavaScript -->
+            </div>
+            
+            <div class="feedback-container">
+                <div id="feedback-easy" class="feedback"></div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="back-from-game-easy" class="secondary-button">חזרה לתפריט</button>
+                <button id="next-easy" class="main-button">המשך</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- מסך משחק - רמה בינונית -->
+    <div id="game-medium-screen" class="screen">
+        <div class="container">
+            <div class="game-header">
+                <h2>רמה בינונית: ניתוח מערכות</h2>
+                <div class="progress-bar">
+                    <div id="progress-medium" class="progress"></div>
+                </div>
+            </div>
+            
+            <div id="medium-systems-container" class="systems-container">
+                <!-- התוכן יוכנס דינמית דרך JavaScript -->
+            </div>
+            
+            <div class="feedback-container">
+                <div id="feedback-medium" class="feedback"></div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="back-from-game-medium" class="secondary-button">חזרה לתפריט</button>
+                <button id="next-medium" class="main-button">המשך</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- מסך סיום -->
+    <div id="summary-screen" class="screen">
+        <div class="container">
+            <h2>כל הכבוד!</h2>
+            <div class="summary-content">
+                <div id="summary-stats" class="summary-stats">
+                    <!-- סטטיסטיקות יוכנסו דינמית דרך JavaScript -->
+                </div>
+                <div class="summary-message">
+                    <h3>למדתם על מערכות ורכיביהן</h3>
+                    <p>זכרו את העקרונות החשובים:</p>
+                    <ul>
+                        <li>מערכת מורכבת מרכיבים שונים הפועלים יחד</li>
+                        <li>ניתן להגדיר את גבולות המערכת בהתאם לנקודת המבט שלנו</li>
+                        <li>שינויים ברמת המיקרו משפיעים על המערכת כולה</li>
+                        <li>התיאום בין הרכיבים חיוני להצלחת המערכת</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="summary-buttons">
+                <button id="play-again" class="main-button">שחק שוב</button>
+                <button id="go-home" class="secondary-button">חזרה לעמוד הראשי</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
